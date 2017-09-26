@@ -4,6 +4,9 @@ import java.util.Scanner;
 
 public class Networking01 {
     public static void main(String[] args) {
+        System.out.println("Riley Flint");
+        System.out.println("CSC-294-01");
+        System.out.println("Programming Assignment #1");
         try {
             Scanner scanner = new Scanner(System.in);
             System.out.println("Please enter a hostname: ");
@@ -22,7 +25,7 @@ public class Networking01 {
                     connection, port, localAddress, localPort);
 
         } catch (IOException e) {
-            System.out.println("Failed to resolve hostname.");
+            System.out.println("Bad socket.");
             System.exit(1);
         } catch (NumberFormatException e) {
             System.out.println("Not a valid port.");
